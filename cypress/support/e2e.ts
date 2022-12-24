@@ -16,6 +16,8 @@
 // Import commands.js using ES2015 syntax:
 // import "./commands";
 // import "./comandComands";
+import "@shelex/cypress-allure-plugin";
+
 import "./LoginPage_support";
 import "./Dropdown__support";
 import "./Dynamic_Control_support";

@@ -8,7 +8,11 @@
     "format": "prettier --config .prettierrc **/*.ts --write",
     "lint": "eslint **/*.{ts,json}",
     "lint:fix": "eslint **/*.{ts,json} --quiet --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open"
   },
   "repository": {
     "type": "git",
@@ -23,11 +27,13 @@
   },
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
     "@types/chromedriver": "^81.0.1",
     "@types/node": "^18.11.9",
     "@types/selenium-webdriver": "^4.1.9",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
+    "allure-commandline": "^2.20.1",
     "chromedriver": "^107.0.3",
     "cypress": "^12.2.0",
     "eslint": "8.22.0",
