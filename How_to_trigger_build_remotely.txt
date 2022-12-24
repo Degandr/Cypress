@@ -1,0 +1,4 @@
+----TASK_2----
+
+    1) On Jenkins side create a job with GitHub link on this repository
+    2) Also on Jenkins side add build steps in separate commands: "npm i" and "npm run cypress:run"
